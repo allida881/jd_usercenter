@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+ <head>
+  <title>用户中心-京东 </title>
+  <meta charset="utf-8">
+  <link href="css/jd.css" rel="Stylesheet" />
+  <link rel="icon" href="img/favicon.ico">
+ </head>
+ <body>  
+   
+    <div class="header"></div> 
+	<div class="main">
+       <div id="item">
+	      <h2>我的京东</h2>
+		  <ul class="affix">
+		    <li class="active" ><a data-toggle="affix-item" href="#my-order">我的订单</a></li>
+		    <li ><a data-toggle="affix-item" href="#buy-stat">消费统计</a></li>
+		    <li ><a data-toggle="affix-item" href="#luck-lottery">幸运抽奖</a></li>
+		  </ul>
+	   </div>
+       <!-- 	   右边 -->
+	   <div class="affix_content">
+	      <!-- 我的订单-->
+	      <div id="my-order" class="container my-order  active">
+		      <form>
+			    <table class="order">
+					<thead>
+					  <tr>
+						 <th class="order_infer">订单信息</th>
+						 <th class="order_pep">收货人</th>
+						 <th class="order_money">订单金额</th>
+						 <th>
+						     <select name="" id="">
+							   <option value="0">最近一个月</option>
+							   <option value="1">最近三个月</option>
+							   <option value="2">最近六个月</option>
+							 </select>
+						 </th>
+						 <th>
+						     <select name="" id="">
+							   <option value="0">全部状态</option>
+							   <option value="1">等待付款</option>
+							   <option value="2">等待收货</option>
+							   <option value="3">订单完成</option>
+							   <option value="4">订单取消</option>
+							 </select> 
+						 </th>
+						 <th >操作</th>
+					  </tr>
+					</thead>
+					<tbody>
+					<!--
+						<tr >
+						   <td colspan="6">
+						      订单编号:111111258
+						      <a href="#">RERENERNE  旗舰店</a>
+						   </td>
+						 
+						</tr>
+						<tr> 
+						   <td class="order_img">
+						       <a href="#"><img src="img/prod1.jpg"></a>
+							    <a href="#"><img src="img/prod2.jpg"></a>
+						   </td>
+						   <td>强东</td>
+						   <td>Y:35.5</br>在线支付</td>
+						   <td>2015-5-16 </br>13:40:12</td>
+						   <td>等待收货</td>
+						   <td>
+							   <a href="#">查看</a></br>
+							   <a href="#">确认收货</a></br>
+							   <a href="#">取消订单</a>
+						   </td> 
+						</tr>
+					  -->
+					</tbody>
+			    </table>
+			  </form>
+			  <ul class="page">
+			    <!--
+			     <li class="active"><a href="#">1</a></li>
+			     <li value="2"><a href="#">2</a></li>
+			     <li value="3"><a href="#">3</a></li>
+			     <li value="4"><a href="#">4</a></li>
+			     <li value="5"><a href="#">5</a></li>
+				-->
+			  </ul>
+		  </div>
+		  <!-- 消费统计-->
+		  <div id="buy-stat" class="container buy-stat ">
+		    <div  >
+				<canvas id="canvas-buy-start" >
+				   您的浏览器不支持canvas绘图
+				</canvas>
+			</div>
+		  </div>
+		  <!-- 幸运抽奖-->
+	      <div id="luck-lottery" class="container luck-lottery ">
+		     <canvas id="canvas-lottery" width="500" height="500">您的浏览器不支持canvas</canvas>
+		     <button id="bt-lottery">开始抽奖</button>
+			 <p>剩余抽奖次数:<span></span></p>
+		  </div>
+	   </div>
+	
+	</div>
+	<div class="footer"></div>
+	
+    <!--固定定位的模态框--用户登录  -->
+    <!-- 半透明的遮罩层 -->
+	<div class="modal">
+       <!-- 宽度/定位	    -->
+	   <div class="modal-dialog">
+          <!-- 	 背景 边框 边框倒角  阴影  -->
+	      <div class="modal-content">
+		       <p>会员登录</p>
+			   <div class="alert">
+			     <p>请保管好您的用户名和密码</p>
+			   </div>
+			   <form id="user_login">
+				   <input name="uname" type="text"value="qiangdong" placeholder="请输入用户名">
+				   <input name="pwd" type="password" value="123456" placeholder="请输入密码">
+				   <input class="submit" type="button" value="登录" >
+			   </form>
+		  </div>
+	   </div>
+	</div>
+
+	<script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jd_usercenter.js"></script>
+ </body>
+</html>

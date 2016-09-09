@@ -6,8 +6,24 @@
  $conn = mysqli_connect('127.0.0.1','root','','app_jduser', 3306);
 ```
 使用时，可以创建同名数据库。如果不同名，请在运行前，将data文件夹下面，所有.php文件中涉及数据库连接的部分，改成你自己创建的数据库。
+# 运行效果
+####  登录页面：
+  ![登录页](http://od841n3ha.bkt.clouddn.com/1.png)
+####  订单详情页面：
+  ![我的订单](http://od841n3ha.bkt.clouddn.com/2.jpg)
+####  消费统计
+![消费统计](http://od841n3ha.bkt.clouddn.com/3.jpg)  
 
-# 其它
+####  幸运抽奖
+![幸运抽奖](http://od841n3ha.bkt.clouddn.com/4.jpg)
+
+####  点击首页--》进入另外页面，查看到轮播效果:
+![轮播效果](http://od841n3ha.bkt.clouddn.com/5.jpg)
+
+#### 楼层效果
+![楼层效果](http://od841n3ha.bkt.clouddn.com/6.jpg)
+
+# 补充说明
 点击首页，跳转到其它页面，可以看到轮播和楼层效果。
 
 # 问题
